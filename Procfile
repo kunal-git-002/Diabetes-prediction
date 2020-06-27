@@ -1,1 +1,1 @@
-web: gunicorn iris_flask_app:app
+web: gunicorn 0:app
