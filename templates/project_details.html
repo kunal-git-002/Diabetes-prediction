@@ -1,0 +1,58 @@
+
+{% extends "base.html" %}
+<!doctype html>
+<html>
+    {% block content %}
+    <head>
+    <title>project-details </title>
+    <link rel="stylesheet" type="text/css" href="{{url_for("static",filename="file.css")}}">
+    </link>
+    <style>
+    img{
+            height:80px;
+            width:80px;
+            margin:auto 20px auto auto;    
+            background-color:#000000;
+            border-radius:200px;
+
+    }
+    
+    a img:hover{
+            border:solid #FFFF00;
+    }
+    </style>
+    </head>
+
+    
+    <body background="static/m6.jpg" 
+    style="backgroubd-repeat:no-repeat;
+    background-size:cover;">
+    <div class="details-main">
+    
+
+        <h1 style="display:inline">DEVELOPED BY :</h1><h3 style="display:inline"> KUNAL K PADHIYAR</h3><br><br>
+        
+        <h1 style="display:inline">LANGUAGE USED :</h1><h3 style="display:inline"> PYTHON</h3><br><br>
+        
+        <h1 style="display:inline">LIBRARIES USED :</h1><h3 style="display:inline"> SK-LEARN,PANDAS,FLASK</h3><br><br>
+        
+        <h1 style="display:inline">CLOUD SERVICE :</h1><h3 style="display:inline"> HEROKU</h3><br><br>
+
+        <h1 >FOLLOW ME ON :</h1>   
+        <div class="logo" style="margin:20px auto;">
+            
+            <a  href="#" target="_blank">
+            <img class="ln-logo" src="static/ln.jpg">
+            </a> 
+            <a href="#" target="_blank"  >
+            <img class="git-logo" src="static/git.png">
+                                           
+            </a>        
+        
+        </div>
+        
+    </div>
+    </body>
+    
+    {% endblock %}
+</html>

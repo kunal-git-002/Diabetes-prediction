@@ -1,0 +1,65 @@
+
+h1{
+font-size:25px;
+color:#08088A;
+}
+
+h3{font-size:18px;}
+
+
+
+
+nav{
+margin:20px auto;
+color:#FFFFFF;
+background-color:#08088A;
+font-size:25px;
+
+}
+
+
+
+nav a{
+color:#FFFFFF;
+}
+
+
+
+.home{
+margin:100px  auto auto 700px;
+}
+
+.form{
+margin:50px  auto auto 700px;
+}
+
+.details-main{
+margin:100px auto auto 100px;
+}
+
+
+
+form{
+font-size:16px;
+font-weight:bold;
+
+}
+
+.next-button,.submit-button,.back-button{
+color:#FF0000;
+background-color:#00FFFF;
+font-size:18px;
+width:100px;
+height:40px;
+}
+
+.next-button:hover,.submit-button:hover,.back-button:hover{
+color:#000000;
+background-color:#FFFF00;
+}
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+<!doctype html>
+<html>
+    {% block content %}
+    <head>
+    <title>result_of_prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for("static",filename="file.css")}}">
+    </link>
+    </head>
+
+    
+    <body background="static/m1.jpg" 
+    style="backgroubd-repeat:no-repeat;
+    background-size:cover;">
+    
+    <div class="op" style="margin:100px auto auto 700px;">
+    <h1><I>{{data}}</I></h1>
+    <h3>GO BACK TO PREDICTION PAGE <a href="/diabetes_prediction"><button class="back-button">BACK</button></a></h3>
+    </div> 
+    
+    </body>
+    
+    {% endblock %}
+</html>

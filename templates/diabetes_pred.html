@@ -1,0 +1,68 @@
+
+{% extends "base.html" %}
+<!doctype html>
+<html>
+    {% block content %}
+    <head>
+    <title>diabetes-prediction-page</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for("static",filename="file.css")}}">
+    </link>
+    </head>
+
+    
+    <body background="static/m1.jpg" 
+    style="backgroubd-repeat:no-repeat;
+    background-size:cover;">
+    
+    <div class="form">
+    <h1><U><B>PLEASE FILL ALL THE DETAILS</B></U></h1>
+    <form action="#" method="post">
+    
+
+        
+         <label for = "age_">AGE</label>
+         <input type = "number" name = "age"  min=0 max=100  required /><br><br>
+         
+         <label for = "preg_">PREGNANCY</label>
+         <input type = "number" name = "preg" min=0 required /><br><br>
+         
+         <label for = "glu_">GLUCOSE </label>
+         <input type = "number"  name = "glu" min=0  required /><br><br>
+         
+         <label for = "bp_">BLOOD PREASSURE (mm-Hg)</label>
+         <input type = "number" name = "bp" min=0   required /><br><br>
+         
+         <label for = "th_">SKIN THICKNESS (mm)</label>
+         <input type = "number" name = "th"  min=0 required /><br><br>
+         
+         <label for = "ins_">INSULIN</label>
+         <input type = "number" name = "ins"  min=0 required /><br><br>
+         
+         <label for = "bmi_">BMI (kg/m^2)</label>
+         <input type = "number" name = "bmi"  min=0 step=0.001 required /><br><br>
+         
+         <label for = "degree_">DIABETES PEDIGREE FUNCTION</label>
+         <input type = "number"  name = "degree"  min=0 step=0.001 required /><br><br>
+          
+         <input class="submit-button" type = "submit" value = "SUBMIT" />
+         
+      </form>
+      </div >
+      
+      <div class="mesg">
+        {% with mesg = get_flashed_messages()%}
+              {% if mesg %}
+                  {% for mesg in mesg %}
+                      <h2>{{mesg}}</h2>
+                  {% endfor %}
+              {% endif %}
+            
+        {%endwith%}
+    
+      </div>
+      
+
+    </body>
+    
+    {% endblock %}
+</html>

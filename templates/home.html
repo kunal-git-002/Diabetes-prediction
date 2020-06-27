@@ -1,0 +1,39 @@
+
+{% extends "base.html" %}
+<!doctype html>
+<html>
+    {% block content %}
+    <head>
+    <title>home-page</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for("static",filename="file.css")}}">
+    </link>
+    <style>
+    body{
+    background-image:url("static/m2.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+
+}
+    </style>
+    </head>
+
+    
+    <body>
+    
+    <div class="home">
+    <h1><U><B>WELCOME USER,</B></U></h1>
+    <h3>THIS IS DIABETES PREDICTION APP.</h3>
+    <h3>HERE YOU CAN EASILY PREDICT YOUR STATUS ABOUT DIABETES,</h3>
+    <h3>FOR DIABETES PREDICTION PRESS <a href="/diabetes_prediction"><button class="next-button">NEXT</button></a></h3>
+
+    </div>
+    </body>
+    
+    {% endblock %}
+</html>
+
+
+
+
+
